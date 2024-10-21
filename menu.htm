@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Bean Cafe</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776;
+                </div>
+
+                <ul class="header">
+                    <li><a href="index.htm">THE BEAN CAFE</a></li>
+                </ul>
+                <ul class="nav">
+                    <li><a href="index.htm">ABOUT US</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">LOCATIONS</a></li>
+                </ul>
+
+                <ul class="buttons">
+                    <li><a href="rewards.html" class="button-link">Rewards</a></li>
+                    <li><a href="giftcards.html" class="button-link">Giftcards</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <div class="header-container">
+            <h1 class="menu-header">Savor a fresh fusion of coffee style.</h1>
+            <p class="centered-header">Explore all flavors of coffee with us. There is always a new cup worth
+                experiencing</p>
+        </div>
+        <div class="photo-gallery">
+            <div class="gallery-item">
+                <img src="images/macchiato.jpg" alt="Photo 1" class="gallery-photo">
+                <p class="photo-description">Macchiato</p>
+                <p class="photo-details">A shot of espresso with a</p>
+                <p class="photo-details">touch of foamed milk.</p>
+                <button class="learn-more-button">Order Now</button>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cappuccino.jpg" alt="Photo 2" class="gallery-photo">
+                <p class="photo-description">Cappuccino</p>
+                <p class="photo-details">Espresso with steamed milk</p>
+                <p class="photo-details">and a layer of foam.</p>
+                <button class="learn-more-button">Order Now</button>
+            </div>
+            <div class="gallery-item">
+                <img src="images/espresso.jpg" alt="Photo 3" class="gallery-photo">
+                <p class="photo-description">Espresso</p>
+                <p class="photo-details">A rich, concentrated coffee</p>
+                <p class="photo-details">shot topped with crema.</p>
+                <button class="learn-more-button">Order Now</button>
+            </div>
+            <div class="gallery-item">
+                <img src="images/latte1.jpg" alt="Photo 4" class="gallery-photo">
+                <p class="photo-description">Latte</p>
+                <p class="photo-details">Espresso mixed with steamed</p>
+                <p class="photo-details">milk and light foam.</p>
+                <button class="learn-more-button">Order Now</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <p>© 2024 TheBeanCafe. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Cookie Policy</p>
+            <div class="footer-images">
+                <img src="images/Vector1.png" alt="Facebook">
+                <img src="images/Vector2.png" alt="Twitter X">
+                <img src="images/Vector3.png" alt="Instagram">
+                <img src="images/Vector4.png" alt="Google">
+                <img src="images/Vector5.png" alt="Reddit">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
